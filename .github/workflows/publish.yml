@@ -4,7 +4,6 @@ on:
     push:
         branches:
             - main
-
 jobs:
     release:
         name: release
@@ -26,11 +25,7 @@ jobs:
             - name: Install Bun
               run: |
                 curl -fsSL https://bun.sh/install | bash
-                echo "export PATH=\"$HOME/.bun/bin:$PATH\"" >> $GITHUB_ENV
-            - name: Install Bun
-              run: |
-                curl -fsSL https://bun.sh/install | bash
-                export PATH="$HOME/.bun/bin:$PATH"
+                echo "$HOME/.bun/bin" >> $GITHUB_PATH
             - name: version bump
               run: |
                   npm version minor
