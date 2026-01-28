@@ -1,0 +1,9 @@
+{
+  "notFound": "Nem található.",
+  "badRequest": "Hibás kérés.",
+  "unauthorized": "Nem engedélyezett hozzáférés.",
+  "expired": "Munkamenet lejárt.",
+  "forbidden": "Tiltott művelet.",
+  "serverError": "Belső szerverhiba.",
+  "onDupe": "$f már fel van használva."
+}

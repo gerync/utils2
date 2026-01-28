@@ -1,0 +1,9 @@
+{
+  "notFound": "Not found.",
+  "badRequest": "Bad request.",
+  "unauthorized": "Unauthorized access.",
+  "expired": "Session expired.",
+  "forbidden": "Forbidden action.",
+  "serverError": "Internal server error.",
+  "onDupe": "$f already exists."
+}
