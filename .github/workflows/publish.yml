@@ -17,6 +17,10 @@ jobs:
               with:
                   node-version: 20
                   registry-url: https://registry.npmjs.org
+            - name: Set up Git user
+              run: |
+                git config --global user.name "github-actions[bot]"
+                git config --global user.email "github-actions[bot]@users.noreply.github.com"
             - name: version bump
               run: |
                   npm version minor
