@@ -4,6 +4,14 @@
   "version": "1.0.0",
   "author": "Gerync <https://github.gerync.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gerync/utils2"
+  },
+  "homepage": "https://github.com/gerync/utils2#readme",
+  "bugs": {
+    "url": "https://github.com/gerync/utils2/issues"
+  },
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -21,12 +29,14 @@
   },
   "files": [
     "dist",
-    "lang"
+    "lang",
+    "README.md",
+    "LICENSE"
   ],
   "scripts": {
     "build": "tsup",
     "test": "bun test",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build && npm run test"
   },
   "keywords": [
     "express",
