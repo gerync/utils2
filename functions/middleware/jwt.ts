@@ -1,8 +1,10 @@
-import { decode, verify, sign, type SignOptions } from 'jsonwebtoken';
+import pkg from 'jsonwebtoken';
 import type { Response, Request, NextFunction } from 'express';
+import type { SignOptions } from 'jsonwebtoken';
 import crypto from 'crypto';
 
 // #region secretGen
+const { sign, verify, decode } = pkg;
 export function generateSecret(): string {
     return crypto.randomBytes(64).toString('hex');
 }
